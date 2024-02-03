@@ -11,7 +11,7 @@ export default function Nav() {
     return(
         <div>
             <nav className="navbar">
-                <a href="#" className='logo'><img src={logo} alt="logo" title='Little Lemon Restaurant' /></a>
+                <a href="#" className='logo'><img src={logo} alt="logo" title='Little Lemon Restaurant'/></a>
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>

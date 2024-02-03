@@ -8,15 +8,15 @@ li, a {
     color: black;
 }
 
-.logo img {
-    width: 150%;
-}
+
+
+
 
 .navbar {
-    padding: 10px 15%;
+    padding: 10px 10%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-around;
 }
 
 .navbar li {
@@ -92,13 +92,13 @@ li, a {
         display: none;
     }
     .logo img{
-        width: 140%;
+        width: 105%;
     }
 }
 
 @media (min-width: 376px) {
     .logo img {
-        width: 150%;
+        width: 125%;
     }
 }
 
@@ -116,9 +116,13 @@ li, a {
     }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1370px) {
     .navbar {
         flex-direction: row;
+    }
+
+    .logo {
+        width: 15%;
     }
 }
 
