@@ -9,7 +9,7 @@ export default function Nav() {
         setOpenMenu(!openMenu);
     }
     return(
-        <div>
+        <div className='nav-container'>
             <nav className="navbar">
                 <a href="#" className='logo'><img src={logo} alt="logo" title='Little Lemon Restaurant'/></a>
                 <ul>

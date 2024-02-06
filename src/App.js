@@ -7,7 +7,7 @@ import Footer from './Footer';
 function App() {
   return (
     <>
-      <Nav />
+      <Nav className="navbar"/>
       <Main />
     </>
   );
