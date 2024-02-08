@@ -8,7 +8,10 @@ function App() {
   return (
     <>
       <Nav className="navbar"/>
+      <div className='pusher'></div>
+      <Header />
       <Main />
+      <Footer />
     </>
   );
 }

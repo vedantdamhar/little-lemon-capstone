@@ -6,25 +6,27 @@
 
 .nav-container {
     position: fixed;
+    top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.953);
-
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
 }
 
 @media (min-width: 320px) {
-    main {
-        padding-top: 76px;
+    .pusher {
+        height: 77px;
     }
 }
 
-@media (min-width: 878px) {
-    main {
-        padding-top: 134px;
+@media (min-width: 750px) {
+    .pusher {
+        height: 117px;
     }
 }
 
-@media (min-width: 1370px) {
-    main {
-        padding-top: 85px;
+@media (min-width: 1200px) {
+    .pusher {
+        height: 78px;
     }
 }
+

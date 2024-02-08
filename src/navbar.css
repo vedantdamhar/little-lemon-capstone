@@ -11,7 +11,8 @@ li, a {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.300) 0px 4px 12px;
 }
 
 .navbar li {
@@ -20,7 +21,6 @@ li, a {
 
 .navbar ul li {
     display: inline-block;
-    padding: 1em;
 }
 
 .menu-icon {
@@ -32,8 +32,8 @@ li, a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden; /* Hide overflowing content */
-    max-height: 0; /* Initially set the max-height to 0 */
+    overflow: hidden;
+    max-height: 0;
     transition: max-height 0.5s ease-in-out;
 }
 
@@ -87,17 +87,11 @@ li, a {
         width: 130%;
     }
     .navbar {
-        padding: 10px 0%;
+        padding: 10px 5%;
     }
 }
 
-@media (min-width: 376px) {
-    .logo img {
-        width: 130%;
-    }
-}
-
-@media (min-width: 878px) {
+@media (min-width: 750px) {
     .navbar {
         flex-direction: column;
     }
@@ -107,9 +101,34 @@ li, a {
     .menu-icon {
         display: none;
     }
+
+    .navbar ul li {
+        padding: 1em 1em;
+    }
 }
 
-@media (min-width: 1370px) {
+@media (min-width: 910px) {
+    .navbar ul li{
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar ul li{
+        padding-right: 1em
+    }
+
+    .navbar {
+        flex-direction: row;
+        padding: 10px 10%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .navbar ul li {
+        padding: 1em;
+    }
     .navbar {
         flex-direction: row;
     }
@@ -117,7 +136,13 @@ li, a {
         width: 150%;
     }
     .navbar {
-        padding: 10px 8%;
+        padding: 10px 11%;
+    }
+}
+
+@media (min-width: 1750px) {
+    .navbar {
+        padding: 10px 17%;
     }
 }
 

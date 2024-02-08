@@ -22,8 +22,6 @@ export default function Nav() {
                 </ul>
                 <a className='menu-icon'><img src={hamburger} alt='menu icon' onClick={handleOpenMenu}/></a>
             </nav>
-
-            
           <div className={`mobile-menu ${openMenu ? 'open' : ''}`}>
           <ul>
             <li><a href="#">HOME</a></li>
@@ -34,7 +32,6 @@ export default function Nav() {
             <li><a href="#">LOGIN</a></li>
           </ul>
           </div>
-    
         </div>
     );
 }

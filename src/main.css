@@ -1,8 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
 
-main > h1 {
-    padding: 30px 20%;
+.section-title > h1 {
     font-family: "Markazi Text", serif;
     font-size: 53px;
+}
+
+.menu-button {
+    font-size: 20px;
+    border-radius: 16px;
+    background-color: #F4CE14;
+    border-style: none;
+}
+
+
+@media (min-width: 320px) {
+    .section-title {
+        padding: 30px 5%;
+    }
+
+    .section-title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-button {
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 600px) {
+    .section-title {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-button {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1150px) {
+    .section-title {
+        padding: 30px 10%;
+    }
+}
+
+@media (min-width: 1750px) {
+    .section-title{
+        padding: 30px 17%;
+    }
+
+    .section-title {
+        display: flex;
+        justify-content: space-between;
+    }
 }

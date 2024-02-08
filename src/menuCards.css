@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
 
 .menu-card {
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.205) 0px 4px 12px;
-    /* width: 30%; */
+    box-shadow: rgba(0, 0, 0, 0.300) 0px 4px 12px;
 }
 
 .dish-info > h2, p {
@@ -31,21 +31,10 @@
     overflow: hidden;
 }
 
-
 .menu-card img {
     width: 100%;
     height: auto;
-
-}
-
-.cards-section {
-    /* display: flex;
-    justify-content: space-around; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 0px 20%;
- 
+    border-radius: 16px;
 }
 
 .dish-info div {
@@ -59,4 +48,39 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+}
+
+
+@media (min-width: 320px) {
+    .cards-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 5%;
+    }
+}
+
+@media (min-width: 700px) {
+    .cards-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .cards-section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1150px) {
+    .cards-section {
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        padding: 30px 10%;
+    }
+}
+
+@media (min-width: 1750px) {
+    .cards-section {
+        padding: 30px 17%;
+    }
 }

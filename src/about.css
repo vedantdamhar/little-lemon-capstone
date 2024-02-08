@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+
+.about-section {
+    font-family: "Karla", sans-serif;
+}
+
+.about-section img {
+    width: 100%;
+    position: relative;
+}
+
+.about-photos {
+    width: 100%;
+}
+
+/* #chefA {
+    top: 20px;
+    left: 60px;
+    z-index: 100;
+}
+
+#chefB {
+    bottom: 20px;
+} */
+
+.about-info h1 {
+    /* color: #F4CE14; */
+    font-family: "Markazi Text", serif;
+    font-weight: 500;
+    font-size: 67px;
+}
+
+.about-info h2 {
+    font-family: "Markazi Text", serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.about-info p {
+    font-size: 20px;
+}
+
+@media (min-width: 320px) {
+    .about-section {
+        padding: 30px 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #chefB {
+        display: none;
+
+    }
+}
+
+@media (min-width: 700px) {
+    .about-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1150px) {
+    .about-section {
+        grid-template-columns: 1fr 1fr;
+        padding: 30px 10%;
+    }
+
+    #chefA {
+        position: relative;
+        left: 40px;
+        top: 20px;
+    }
+
+    #chefB {
+        display: block;
+        bottom: 20px;
+    }
+
+    .about-photos {
+        display: flex;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 1750px) {
+    .about-section {
+        padding: 30px 17%;
+    }
+}
