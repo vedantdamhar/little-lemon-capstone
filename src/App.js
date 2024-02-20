@@ -1,19 +1,24 @@
 import './App.css';
-import Header from './Header';
 import Nav from './Nav';
-import Main from './Main';
+import HeaderMain from './HeaderMain';
 import Footer from './Footer';
+import BookingPage from './BookingPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import BookingConfirmation from './BookingConfirmation';
 
-function App() {
+export default function App() {
   return (
-    <>
-      <Nav className="navbar"/>
-      <div className='pusher'></div>
-      <Header />
-      <Main />
+    <Router>
+      <Nav />
+      <div id='spacer'></div>
+      <Routes>
+        <Route path='/' element={<HeaderMain />} />
+        <Route path='/booking' element={<BookingPage />} />
+        <Route path='/booking/confirmation' element={<BookingConfirmation />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 
-export default App;
+

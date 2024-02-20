@@ -1,0 +1,52 @@
+.confirmation-section {
+    height: 100vh;
+}
+
+.confirmation-container {
+    box-shadow: rgba(0, 0, 0, 0.300) 0px 4px 12px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.confirmation-container h2 {
+    text-align: center;
+}
+
+#check-mark {
+    width: 30%;
+}
+
+#exit-home {
+    width: 100%;
+}
+
+.check-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 320px) {
+    .confirmation-section {
+        padding: 60px 5%;
+    }
+}
+
+@media (min-width: 700px) {
+    .confirmation-section {
+        padding: 60px 15%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .confirmation-section {
+        padding: 60px 25%;
+    }
+}
+
+@media (min-width: 1750px) {
+    .confirmation-section {
+        padding: 60px 35%;
+    }
+}

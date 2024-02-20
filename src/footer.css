@@ -1,37 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
-
-
 footer img {
     width: 40%;
     height: auto;
+}
 
+footer a, footer p {
+    color: var(--first-highlight-color);
+}
+
+footer h2 {
+    color: var(--main-yellow-color);
 }
 
 footer {
     box-shadow: rgba(0, 0, 0, 0.622) 0px 4px 12px;
-    background-color: #495e57;
+    background-color: var(--main-green-color);
 }
 
 footer li {
     list-style-type: none;
 }
 
-footer h1 {
-    font-family: "Markazi Text";
-    font-size: 40px;
-    font-weight: 500;
-    color: #F4CE14;
-}
-
-footer a {
-    font-size: 20px;
-    color: white;
-}
-
 footer li {
     padding-bottom: 5px;
 }
+
 
 @media (min-width: 320px) {
     footer {
@@ -57,14 +49,17 @@ footer li {
 
     #doormat-nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+    #logo-footer {
+        display: flex;
+        justify-content: start;
     }
 }
 
 @media (min-width: 1150px) {
-
     footer {
         padding: 30px 17%;
     }
-    
 }

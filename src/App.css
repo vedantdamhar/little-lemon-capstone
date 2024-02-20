@@ -1,7 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    color: var(--second-highlight-color);
+    --main-green-color: #495e57;
+    --main-yellow-color: #F4CE14;
+    --first-secondary-color: #e46124;
+    --second-secondary-color: #FBDABB;
+    --first-highlight-color: #EDEFEE;
+    --second-highlight-color: #333333;
+}
+
+h1, h2, h3 {
+    font-family: "Markazi Text", serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p, a, form {
+    font-family: "Karla", sans-serif;
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+.yellow-button, #submit-button, button {
+    display: block;
+    font-size: 1.2rem;
+    border-style: none;
+    border-radius: 16px;
+    color: #333333;
+    background-color: var(--main-yellow-color);
+    font-weight: 500;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.yellow-button:hover, button:hover {
+    cursor: pointer;
+    background-color: #d9b812;
+}
+
+.yellow-button:active, button:active {
+    background-color: #333333;
+    color: var(--main-yellow-color);
+}
+
+.navbar li, .mobile-menu li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .nav-container {
@@ -13,20 +80,25 @@
 }
 
 @media (min-width: 320px) {
-    .pusher {
+    #spacer {
         height: 77px;
     }
 }
 
 @media (min-width: 750px) {
-    .pusher {
-        height: 117px;
+    #spacer {
+        height: 138.4px;
     }
 }
 
 @media (min-width: 1200px) {
-    .pusher {
-        height: 78px;
+    #spacer {
+        height: 81.4px;
     }
 }
 
+@media (min-width: 1400px) {
+    #spacer {
+        height: 85px;
+    }
+}

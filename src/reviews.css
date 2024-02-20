@@ -1,18 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
-
-
 .review-container {
-    background-color: white;
+    background-color: var(--first-highlight-color);
     border-radius: 16px;
     padding: 10px;
-    font-size: 20px;
     box-shadow: rgba(0, 0, 0, 0.451) 0px 4px 12px;
 }
 
 .review-container img {
     width: 100%;
     border-radius: 50%;
+}
+
+.review-stars {
+    display: flex;
+    justify-content: center;
+}
+
+.review-stars img {
+    width: 50%;
 }
 
 .person-heading {
@@ -23,20 +27,18 @@
     padding-bottom: 10px;
 }
 
-.person-heading p {
-    font-weight: bold;
-}
-
 .review-section {
-    background-color: #495e57;
+    background-color: var(--main-green-color);
 }
 
-.review-section h1 {
-    color: #F4CE14;
+.review-section h2 {
     padding-bottom: 30px;
     text-align: center;
-    font-size: 53px;
-    font-family: "Markazi Text", serif;
+    color: var(--main-yellow-color);
+}
+
+.person-heading p {
+    font-weight: bold;
 }
 
 @media (min-width: 320px) {
@@ -47,6 +49,7 @@
     }
     .review-section {
         padding: 30px 5%;
+        padding-bottom: 60px;
     }
 }
 
@@ -63,18 +66,16 @@
 }
 
 @media (min-width: 1150px) {
-    /* .review-cards {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    } */
-
     .review-section {
         padding: 30px 10%;
+        padding-bottom: 60px;
     }
 }
 
 @media (min-width: 1750px) {
     .review-section {
         padding: 30px 17%;
+        padding-bottom: 60px;
     }
 }
 
