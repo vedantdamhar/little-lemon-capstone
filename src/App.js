@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import BookingPage from './components/BookingPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BookingConfirmation from './components/BookingConfirmation';
+import NotFoundPage from './components/NotFoundPage';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path='/' element={<HeaderMain />} />
         <Route path='/booking' element={<BookingPage />} />
         <Route path='/booking/confirmation' element={<BookingConfirmation />} />
+        <Route path='*' element={<NotFoundPage />}/>
       </Routes>
       <Footer />
     </Router>

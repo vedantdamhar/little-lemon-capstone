@@ -58,11 +58,6 @@ export default function BookingPage() {
     }
   }, [date]);
 
-  useEffect(() => {
-    console.log(availableTimes);
-    console.log(error);
-  })
-
   return (
     <section className="booking-section">
       <h2>Reserve Your Table</h2>
