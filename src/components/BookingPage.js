@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import BookingForm from "./BookingForm";
-import { fetchAPI, submitAPI } from "./mockAPI";
-import "./bookingPage.css";
-import bookingImage from "./assets/restauranfood.jpg"
+import BookingForm from "../components/BookingForm";
+import { fetchAPI, submitAPI } from "../mockAPI";
+import "../styles/bookingPage.css";
+import bookingImage from "../assets/restauranfood.jpg"
 import { useNavigate } from "react-router-dom";
 
 export default function BookingPage() {

@@ -1,19 +1,19 @@
 import React from "react";
-import greekSalad from "./assets/greek salad.jpg";
-import bruschetta from "./assets/bruchetta.jpg";
-import lemonDessert from "./assets/lemon dessert.jpg";
-import fivestars from "./assets/fivestars.png";
-import chris from "./assets/chris.jpg";
-import alex from "./assets/alex.jpg";
-import claire from "./assets/claire.jpg";
-import jennifer from "./assets/jennifer.jpg";
-import chefsA from "./assets/Mario and Adrian A.jpg";
-import chefsB from "./assets/Mario and Adrian b.jpg";
+import greekSalad from "../assets/greek salad.jpg";
+import bruschetta from "../assets/bruchetta.jpg";
+import lemonDessert from "../assets/lemon dessert.jpg";
+import fivestars from "../assets/fivestars.png";
+import chris from "../assets/chris.jpg";
+import alex from "../assets/alex.jpg";
+import claire from "../assets/claire.jpg";
+import jennifer from "../assets/jennifer.jpg";
+import chefsA from "../assets/Mario and Adrian A.jpg";
+import chefsB from "../assets/Mario and Adrian b.jpg";
 import { NavLink } from "react-router-dom";
-import "./main.css";
-import "./menuCards.css";
-import "./reviews.css";
-import "./about.css";
+import "../styles/main.css";
+import "../styles/menuCards.css";
+import "../styles/reviews.css";
+import "../styles/about.css";
 
 const greekSaladData = {
     dishName: "Greek Salad",
@@ -45,8 +45,6 @@ const reviewsData = [
     { name: "Claire", image: claire, review: "Lovely presentation, flavors were phenomenal." },
     { name: "Jennifer", image: jennifer, review: "One of my favorite places - love to bring my family here!" }
 ];
-
-const chefsData = [chefsA, chefsB];
 
 const MenuCard = ({ dishName, description, price, image, alt }) => (
     <div className="menu-card">

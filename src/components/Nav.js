@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from './assets/Logo.svg';
-import hamburger from './assets/hamburger.svg';
-import './navbar.css';
+import logo from '../assets/Logo.svg';
+import hamburger from '../assets/hamburger.svg';
+import '../styles/navbar.css';
 
 const Nav = () => {
     const [openMenu, setOpenMenu] = useState(false);

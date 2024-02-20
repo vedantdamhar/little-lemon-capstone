@@ -1,7 +1,6 @@
 import React from 'react';
-import { render, waitFor, screen, fireEvent, getByText, act } from '@testing-library/react';
-import BookingForm from './BookingForm';
-import { fetchAPI } from './mockAPI';
+import { render, waitFor, screen, fireEvent, act } from '@testing-library/react';
+import BookingForm from './components/BookingForm';
 
 describe('BookingForm Component', () => {
   it('should display error message for invalid date', async () => {

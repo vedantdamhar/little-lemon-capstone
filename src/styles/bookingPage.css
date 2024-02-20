@@ -119,7 +119,7 @@ label {
 
     .reserve-button {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
     }
     .form-section fieldset {
         padding: 20px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import confirmed from "./assets/confirmed.png"
-import "./bookingConfirmation.css"
+import confirmed from "../assets/confirmed.png"
+import "../styles/bookingConfirmation.css"
 
 export default function BookingConfirmation() {
 

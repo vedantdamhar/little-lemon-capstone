@@ -54,7 +54,7 @@ footer li {
 
     #logo-footer {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
     }
 }
 

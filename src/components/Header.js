@@ -1,6 +1,6 @@
 import React from "react";
-import restaurant from "./assets/restauranfood.jpg";
-import "./header.css";
+import restaurant from "../assets/restauranfood.jpg";
+import "../styles/header.css";
 import { NavLink } from 'react-router-dom';
 
 export default function Header() {

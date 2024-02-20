@@ -1,10 +1,10 @@
 import './App.css';
-import Nav from './Nav';
-import HeaderMain from './HeaderMain';
-import Footer from './Footer';
-import BookingPage from './BookingPage';
+import Nav from './components/Nav';
+import HeaderMain from './components/HeaderMain';
+import Footer from './components/Footer';
+import BookingPage from './components/BookingPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import BookingConfirmation from './BookingConfirmation';
+import BookingConfirmation from './components/BookingConfirmation';
 
 export default function App() {
   return (
