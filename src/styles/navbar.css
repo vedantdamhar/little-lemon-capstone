@@ -104,7 +104,6 @@
     .menu-icon {
         display: none;
     }
-
     .nav-link {
         padding: 1em;
     }
@@ -119,7 +118,7 @@
 
 @media (min-width: 1200px) {
     .nav-link{
-        padding-right: 1em
+        padding: 1em
     }
 
     .navbar {
@@ -137,9 +136,6 @@
     }
     .logo img{
         width: 150%;
-    }
-    .navbar {
-        padding: 10px 11%;
     }
 }
 

@@ -1,6 +1,7 @@
 .about-section img {
     width: 100%;
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.451) 0px 4px 12px;
 }
 
 .about-photos {
@@ -13,7 +14,6 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-
     #chefB {
         display: none;
     }
@@ -31,18 +31,15 @@
         grid-template-columns: 1fr 1fr;
         padding: 30px 10%;
     }
-
     #chefA {
         position: relative;
         left: 40px;
         top: 20px;
     }
-
     #chefB {
         display: block;
         bottom: 20px;
     }
-
     .about-photos {
         display: flex;
         padding: 30px;
