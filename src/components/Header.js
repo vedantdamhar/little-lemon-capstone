@@ -11,7 +11,7 @@ export default function Header() {
                     <h1>Little Lemon</h1>
                     <h2>Chicago</h2>
                     <p>A family-owned Mediterranean restaurant. Serving you traditional foods with a modern twist prepared by our highly-skilled chefs.</p>
-                    <NavLink className="yellow-button" id='cta-button' to="/booking">Reserve Now!</NavLink>
+                    <NavLink className="yellow-button" id='cta-button' to="/booking" aria-label="Reserve a Table">Reserve Now!</NavLink>
                 </div>
             </section>
             <section className="landing-image">

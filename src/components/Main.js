@@ -115,16 +115,16 @@ const AboutSection = () => (
     </section>
 );
 
-const Main = () => (
-    <main className="main-section">
-        <div id="menu" className="section-title">
-            <h2>Specials</h2>
-            <NavLink to="/future" className="yellow-button" aria-label="Online Menu">Online Menu</NavLink>
-        </div>
-        <SpecialSection />
-        <ReviewSection />
-        <AboutSection />
-    </main>
-);
-
-export default Main;
+export default function Main() {
+    return (
+        <main className="main-section">
+            <div id="menu" className="section-title">
+                <h2>Specials</h2>
+                <NavLink to="/future" className="yellow-button" aria-label="Online Menu">Online Menu</NavLink>
+            </div>
+            <SpecialSection />
+            <ReviewSection />
+            <AboutSection />
+        </main>
+    );
+};

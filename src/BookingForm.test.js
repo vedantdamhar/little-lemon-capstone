@@ -38,14 +38,14 @@ describe('BookingForm Component', () => {
       setName: () => {},
       email: 'john@example.com',
       setEmail: () => {},
-      date: '2024-02-20',
+      date: '2024-02-27',
       setDate: () => {},
       guests: 2,
       setGuests: () => {},
       occasion: 'Birthday',
       setOccasion: () => {},
-      availableTimes: ['10:00', '11:00', '12:00'],
-      selectedTime: '11:00',
+      availableTimes: ['2:30 PM', '3:30 PM', '4:30 PM'],
+      selectedTime: '3:30 PM',
       setSelectedTime: () => {},
       loading: false,
       error: null,
@@ -53,10 +53,7 @@ describe('BookingForm Component', () => {
       submitting: false,
     };
 
-    const {getByRole, getByLabelText, getByTestId} = render(<BookingForm {...initialState} />);
-    fireEvent.click(getByTestId("name-testid"));
-    fireEvent.click(document.body)
-
+    const {getByRole, getByTestId} = render(<BookingForm {...initialState} />);
     const submitButton = getByRole('button', {name: /Confirm Reservation/i});
     expect(submitButton).toBeDisabled();
   })

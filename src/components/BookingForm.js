@@ -53,7 +53,6 @@ export default function BookingForm({
   const handleFormSubmit = (e) => {
     e.preventDefault();
     handleSubmit(e)
-
   }
 
   return (

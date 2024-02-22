@@ -4,7 +4,7 @@ import logo from '../assets/Logo.svg';
 import hamburger from '../assets/hamburger.svg';
 import '../styles/navbar.css';
 
-const Nav = () => {
+export default function Nav() {
     const [openMenu, setOpenMenu] = useState(false);
 
     const handleOpenCloseMenu = () => {
@@ -43,6 +43,4 @@ const Nav = () => {
         </nav>
     );
 }
-
-export default Nav;
 

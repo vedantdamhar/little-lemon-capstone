@@ -1,9 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useReducer } from "react";
 import BookingForm from "../components/BookingForm";
 import { fetchAPI, submitAPI } from "../mockAPI";
 import "../styles/bookingPage.css";
 import bookingImage from "../assets/restauranfood.jpg"
 import { useNavigate } from "react-router-dom";
+
+const initialTimesState = {
+  availableTimes: []
+};
+
+function reducer(state, action) {
+  switch (action.type) {
+    case "SET_AVAILABLE_TIMES":
+      return {availableTimes: action.payload};
+    default:
+      return state;
+  }
+}
 
 export default function BookingPage() {
   const [name, setName] = useState("");
@@ -11,7 +24,7 @@ export default function BookingPage() {
   const [date, setDate] = useState("");
   const [guests, setGuests] = useState(2);
   const [occasion, setOccasion] = useState("");
-  const [availableTimes, setAvailableTimes] = useState([]);
+  const [state, dispatch] = useReducer(reducer, initialTimesState);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [selectedTime, setSelectedTime] = useState("");
@@ -43,11 +56,11 @@ export default function BookingPage() {
 
   useEffect(() => {
     if (date) {
-      setAvailableTimes([]);
+      dispatch({type: "SET_AVAILABLE_TIMES", payload: []});
       setLoading(true);
       fetchAPI(date)
         .then((times) => {
-          setAvailableTimes(times);
+          dispatch({type: "SET_AVAILABLE_TIMES", payload: times});
           setLoading(false);
           setError(null);
         })
@@ -57,6 +70,7 @@ export default function BookingPage() {
         });
     }
   }, [date]);
+
 
   return (
     <section className="booking-section">
@@ -74,7 +88,7 @@ export default function BookingPage() {
             setGuests={setGuests}
             occasion={occasion}
             setOccasion={setOccasion}
-            availableTimes={availableTimes}
+            availableTimes={state.availableTimes}
             selectedTime={selectedTime}
             setSelectedTime={setSelectedTime}
             loading={loading}
