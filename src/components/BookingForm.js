@@ -14,7 +14,6 @@ export default function BookingForm({
   availableTimes,
   selectedTime,
   setSelectedTime,
-  loading,
   error,
   handleSubmit,
   submitting

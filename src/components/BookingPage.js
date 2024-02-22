@@ -25,7 +25,6 @@ export default function BookingPage() {
   const [guests, setGuests] = useState(2);
   const [occasion, setOccasion] = useState("");
   const [state, dispatch] = useReducer(reducer, initialTimesState);
-  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [selectedTime, setSelectedTime] = useState("");
   const [submitting, setSubmitting] = useState(false);
@@ -57,16 +56,13 @@ export default function BookingPage() {
   useEffect(() => {
     if (date) {
       dispatch({type: "SET_AVAILABLE_TIMES", payload: []});
-      setLoading(true);
       fetchAPI(date)
         .then((times) => {
           dispatch({type: "SET_AVAILABLE_TIMES", payload: times});
-          setLoading(false);
           setError(null);
         })
         .catch((error) => {
           setError(error.message);
-          setLoading(false);
         });
     }
   }, [date]);
@@ -91,7 +87,6 @@ export default function BookingPage() {
             availableTimes={state.availableTimes}
             selectedTime={selectedTime}
             setSelectedTime={setSelectedTime}
-            loading={loading}
             error={error}
             handleSubmit={handleSubmit}
             submitting={submitting}

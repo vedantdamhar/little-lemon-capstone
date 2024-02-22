@@ -26,7 +26,7 @@ export default function BookingConfirmation() {
           </div>
           <h2>Booking Confirmed</h2>
           <p>
-          Dear <b>{name}</b>, this message confirms your reservation for <b>{formatDate(date)}</b> at <b>{selectedTime}</b> for <b>{guests}</b> guests.
+          Dear <b>{name}</b>, this message confirms your reservation for <b>{formatDate(date)}</b> at <b>{selectedTime}</b> for <b>{guests}</b> guest(s).
           A confirmation email has been sent to <b>{email}</b>.
           </p>
           <NavLink className="yellow-button" id='exit-home' to="/">Exit to Home</NavLink>
